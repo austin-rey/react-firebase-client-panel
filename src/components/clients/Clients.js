@@ -4,12 +4,28 @@ class Clients extends Component {
   render() {
     const clients = [
       {
-        id: "123",
+        id: "1",
         firstName: "Kevin",
         lastName: "Johnson",
         email: "kevin@gmail.com",
         phone: "555-555-5555",
         balance: "34"
+      },
+      {
+        id: "2",
+        firstName: "Travis",
+        lastName: "Smith",
+        email: "travis@gmail.com",
+        phone: "666-666-6666",
+        balance: "120"
+      },
+      {
+        id: "3",
+        firstName: "Sam",
+        lastName: "Scott",
+        email: "sam@gmail.com",
+        phone: "222-222-2222",
+        balance: "450"
       }
     ];
 
