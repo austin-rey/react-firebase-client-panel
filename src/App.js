@@ -8,7 +8,7 @@ import "./App.css";
 
 import Dashboard from "./components/layout/Dashboard";
 import AppNavbar from "./components/layout/AppNavbar";
-
+import AddClient from "./components/clients/AddClient";
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Dashboard} />
+              <Route exact path="/client/add" component={AddClient} />
             </Switch>
           </div>
         </Router>
