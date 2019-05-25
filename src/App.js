@@ -9,6 +9,8 @@ import "./App.css";
 import Dashboard from "./components/layout/Dashboard";
 import AppNavbar from "./components/layout/AppNavbar";
 import AddClient from "./components/clients/AddClient";
+import ClientDetails from "./components/clients/ClientDetails";
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Dashboard} />
               <Route exact path="/client/add" component={AddClient} />
+              <Route exact path="/client/:id" component={ClientDetails} />
             </Switch>
           </div>
         </Router>
