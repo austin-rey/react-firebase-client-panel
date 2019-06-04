@@ -72,7 +72,7 @@ class ClientDetails extends Component {
           <div className="row">
             <div className="col-md-6">
               <Link to="/" className="btn btn-link">
-                <i className="fas fa-arrow-circle-left"> Back To Dashboard</i>
+                <i className="fas fa-arrow-circle-left" /> Back To Dashboard
               </Link>
             </div>
             <div className="col-md-6">

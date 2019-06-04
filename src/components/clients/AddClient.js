@@ -102,11 +102,7 @@ class AddClient extends Component {
                   value={this.state.balance}
                 />
               </div>
-              <input
-                type="submit"
-                value="Submit"
-                className="btn-primary btn-blocb"
-              />
+              <input type="submit" value="Submit" className="btn btn-success" />
             </form>
           </div>
         </div>
