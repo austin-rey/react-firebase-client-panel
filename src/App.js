@@ -11,6 +11,7 @@ import AppNavbar from "./components/layout/AppNavbar";
 import AddClient from "./components/clients/AddClient";
 import EditClient from "./components/clients/EditClient";
 import ClientDetails from "./components/clients/ClientDetails";
+import Login from "./components/auth/Login";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <AppNavbar />
           <div className="container">
             <Switch>
+              <Route exact path="/login" component={Login} />
               <Route exact path="/" component={Dashboard} />
               <Route exact path="/client/add" component={AddClient} />
               <Route exact path="/client/:id" component={ClientDetails} />
