@@ -28,7 +28,7 @@ class EditClient extends Component {
       email: this.emailInput.current.value,
       phoneInput: this.phoneInput.current.value,
       balance:
-        this.balanceInput.current.value == ""
+        this.balanceInput.current.value === ""
           ? 0
           : this.balanceInput.current.value
     };
