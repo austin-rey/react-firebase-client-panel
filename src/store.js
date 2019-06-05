@@ -6,6 +6,7 @@ import { reduxFirestore, firestoreReducer } from "redux-firestore";
 
 // Reducers
 import notifyReducer from "./components/reducers/notifyReducer";
+import settingsReducer from "./components/reducers/settingsReducer";
 
 // firebase Config
 const firebaseConfig = {
@@ -24,7 +25,7 @@ const rrfConfig = {
   useFirestoreForProfile: true // Firestore for Profile instead of Realtime DB
 };
 
-//Init firebase instance
+// Init firebase instance
 firebase.initializeApp(firebaseConfig);
 
 // Init firestore
@@ -35,11 +36,12 @@ const createStoreWithFirebase = compose(
   reduxFirestore(firebase)
 )(createStore);
 
-// Firebase Root Reducer
+// Root Reducer
 const rootReducer = combineReducers({
   firebase: firebaseReducer,
   firestore: firestoreReducer,
-  notify: notifyReducer
+  notify: notifyReducer,
+  settings: settingsReducer
 });
 
 // Create initial state
